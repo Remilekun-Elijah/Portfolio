@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="theme-color" content="#333">
+		<title class="fa fa-rocket">Remilekun Elijah</title>
+		<link rel="shortcut icon" href="assets/images/Author-dark.jpg">
+		<!-- start of web manifest -->
+		<link rel="manifest" href="/manifest.json">
+		<!-- end of web manifest -->
+
+		<!-- register service worker -->
+		<script>
+			if ('serviceWorker' in navigator) {
+						window.addEventListener('load', function () {
+							navigator.serviceWorker.register('/service-worker.js')
+								.then(function () {
+									console.log("Service Worker Registered. PWA has started working!");
+								});
+						});
+					}
+				</script>
+		<!-- end of service worker -->
+
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- font m-fizz -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+
+		<!-- <link rel="stylesheet" href="assets/library/font-mfizz.css"> -->
+
+		<!-- Ekko Lightbox -->
+		<link rel='stylesheet' type="style/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+		<!-- <link rel='stylesheet' type="style/css" href="assets/library/ekko-lightbox.css"> -->
+
+
+		<link rel="stylesheet" href="assets/code/css/style.css">
+
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		 crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="assets/library/bootstrap-4.min.css">
+		<link rel="stylesheet" href="assets/library/font-awesome-4.7.min.css"> -->
+
+	</head>
+
+	<body class="mt-1">
+		<div class="container">
+			<div class="shadow">
+				<header class="main-header">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-5">
+							<img src="assets/images/Author-dark.jpg" alt="Author's Picture putting on glasses with vanilla image filter" id="mQuery">
+						</div>
+						<div class="col-lg-8 col-md-7">
+							<div class="d-flex flex-column">
+								<div class="d-flex flex-row justify-content-between align-items-center bg-dark text-white p-5">
+									<h4 class="my-name">Remilekun Elijah</h4>
+									<div>
+										<a href="http://twitter.com/RemilekunElijah" target="_top">
+											<i class="fa fa-twitter"></i></a>
+									</div>
+									<div>
+										<a href="http://facebook.com/remilekun.jnr" target="_top">
+											<i class="fa fa-facebook"></i></a>
+									</div>
+									<div class="d-none d-md-block">
+										<a href="http://instagram.com/remilekun_elijah_jnr" target="_top">
+											<i class="fa fa-instagram"></i></a>
+									</div>
+									<div>
+										<a href="http://github.com/Remilekun-Elijah" target="_top">
+											<i class="fa fa-github"></i></a>
+									</div>
+
+								</div>
+								<div class="p-4 bg-secondary text-white">
+									<p class="lead">
+										Front End Web Developer
+									</p>
+								</div>
+							</div>
+							<div class="d-flex flex-row align-items-stretch text-light text-center">
+								<div class="port-item p-3 bg-primary" data-toggle="collapse" data-target="#home">
+									<i class="fa fa-home fa fa-2x text-light"></i>
+									<span class="d-none d-sm-block text-light">Home</span>
+								</div>
+								<div class="port-item p-3 bg-success" data-toggle="collapse" data-target="#resume">
+									<i class="fa fa-graduation-cap fa fa-2x text-light"></i>
+									<span class="d-none d-sm-block text-light"> Resume</span>
+								</div>
+								<div class="port-item p-3 bg-warning" data-toggle="collapse" data-target="#work">
+									<i class="fa fa-briefcase fa fa-2x text-light"></i> <span class="d-none d-sm-block text-light">Work</span>
+								</div>
+								<div class="port-item p-3 bg-danger" data-toggle="collapse" data-target="#contact">
+									<i class="fa fa-envelope fa fa-2x text-light"></i>
+									<span class="d-none d-sm-block text-light">Contact</span>
+								</div>
+							</div>
+						</div>
+				</header>
+				<!-- Home -->
+				<div class="collapse show pt-0 mt-0" id="home">
+					<div class="card card-body bg-primary text-light p-4" id='caret-parent'>
+						<div class="d-flex flex-row justify-content-between align-items-center">
+							<h3 class="welcome">Welcome to my profile</h3> <i class=" fa fa-caret-up text-white"></i>
+						</div>
+						<p class="lead truncate">I'm a Front End Web Developer with passion of turning great innovative
+							thinking into reality using the web technology.</p>
+					</div>
+
+					<div class="card card-body">
+						<div class="p-4">
+							<h3 class='text-primary font-weight-bold'>My Skills <i class="fa fa-code" style="font-size: 1.2em"></i></h3>
+
+							<p class="lead text-muted">This are my area of profession according to the level of my knowledge</p>
+							<hr>
+
+							<div class="mb-5 mt-5">
+								<h5 class='text-info'>HTML <i class="fa fa-html5"></i></h5>
+								<div class="progress">
+									<div class="progress-bar bg-success progress-bar-stripe progress-bar-animate" style="width:100%">
+										<b class='text-center'>100%</b>
+									</div>
+								</div>
+							</div>
+
+							<div class="mb-5">
+								<h5 class='text-info'>CSS <i class="icon-css3-alt"></i></h5>
+								<div class="progress">
+									<div class="progress-bar bg-success progress-bar-stripe progress-bar-animate" style="width:100%">
+										<b class='text-center'>100%</b>
+									</div>
+								</div>
+							</div>
+
+							<div class="mb-5">
+								<h5 class='text-info'>JavaScript <i class="icon-javascript-alt" style="font-size:1.2em;"></i></h5>
+								<div class="progress">
+									<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:35%">
+										<b class='text-center'>35%</b>
+									</div>
+								</div>
+							</div>
+
+							<div class="mb-5">
+								<h5 class='text-info'>Bootstrap <i class="icon-bootstrap" style="font-size:1em;"></i></h5>
+								<div class="progress">
+									<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:45%">
+										<b class='text-center'>45%</b>
+									</div>
+								</div>
+							</div>
+							<div class="mb-5">
+								<h5 class='text-info'>jQuery <i class="icon-jquery" style="font-size:1em;"></i></h5>
+								<div class="progress">
+									<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:15%">
+										<b class='text-center'>15%</b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Resume -->
+				<div class="collapse" id="resume">
+					<div class="card card-body p-4 bg-success text-white" id='caret-parent'>
+						<div class="d-flex flex-row justify-content-between align-items-center">
+							<h3>My Resume</h3> <i class=" fa fa-caret-up text-white"></i>
+						</div>
+						<p class="lead truncate">With <b>#1-2 years Experience</b>. I've gained ability to <b>#Work under pressure</b>,
+							<b>#Commication Skill</b>, <b>#Team Work</b>, <b>#Self Motivation</b>, <b>#Adabtabilty</b> and <b>#Time
+								Management</b></p>
+					</div>
+					<div class="card card-body">
+						<div class=" p-4 mb-1">
+							<h4 class='text-success'>Where have i worked ?</h4>
+							<p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ullam similique
+								reiciendis quod accusantium in.</p>
+						</div>
+						<div class="card-deck mb-5">
+							<div class="card">
+								<div class="card-body">
+									<div class="text-center">
+										<h3 class="card-title text-success ">Anonymous Dev</h3>
+										<p class="card-text lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, neque magnam?
+											Aliquid nulla ut iure!</p>
+									</div>
+									<p class="p-3 mb-1 bg-dark text-light text-center">
+										Position: Front End Developer
+									</p>
+									<p class="p-3 mb-1 bg-dark text-light text-center">
+										(+234) 903-2521-166
+									</p>
+								</div>
+								<div class="card-footer text-center bg-succes p-1">
+									<p class="lead text-muted">2018 - 2019</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="text-center">
+										<h3 class="card-title text-success ">Hotels NG</h3>
+										<p class="card-text lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, neque magnam?
+											Aliquid nulla ut iure!</p>
+									</div>
+									<p class="p-3 mb-1 bg-dark text-light text-center">
+										Position: Front End | Internship
+									</p>
+									<p class="p-3 mb-1 bg-dark text-light text-center">
+										(+234) 902-3007-389
+									</p>
+								</div>
+								<div class="card-footer text-center bg-succes p-1">
+									<p class="lead text-muted">2017 - 2018</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body d-flex flex-column">
+									<div class="text-center">
+										<h3 class="card-title text-success">Meruth Concept</h3>
+										<p class="card-text lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, neque magnam?
+											Aliquid nulla ut iure!</p>
+									</div>
+									<p class="p-3 mb-1 bg-dark text-light text-center">
+										Position: Casual staff
+									</p>
+									<p class="p-3 mb-1 bg-dark text-light text-center">
+										(112) 000-777-01
+									</p>
+								</div>
+								<div class="card-footer text-center bg-succes p-1">
+									<p class="lead text-muted">2018 - Current</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Work -->
+				<div class="collapse" id="work">
+					<div class="card card-body p-4 bg-warning text-white" id='caret-parent'>
+						<div class="d-flex flex-row justify-content-between align-items-center">
+							<h3>My Work</h3> <i class=" fa fa-caret-up text-white"></i>
+						</div>
+						<p class="lead truncate">Take a quick glance at some of my works. Gigs, personal, and Collabortive project </p>
+					</div>
+					<div class="card card-body">
+						<div class=" p-4 mb-1">
+							<h4 class='text-warning'>What have i built ?</h4>
+							<p class="lead text-muted"> I've scaled up some businesses in tech, using the web technology and the available
+								tool at my disposal to enhance the innovative ideas behind them. Here are some quick ones</p>
+						</div>
+						<div class="row no-gutters">
+							<div class="col-md-3">
+								<a href="assets/images/p-footer.PNG" data-toggle="lightbox">
+									<img src="assets/images/p-footer.PNG" alt="portfolio footer" class="img-fluid">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="assets/images/fb.PNG" data-toggle="lightbox">
+									<img src="assets/images/fb.PNG" alt="portfolio footer" class="img-fluid">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="assets/images/bigger.PNG" data-toggle="lightbox">
+									<img src="assets/images/bigger.PNG" alt="portfolio footer" class="img-fluid">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="assets/images/fb 3.PNG" data-toggle="lightbox">
+									<img src="assets/images/fb 3.PNG" alt="portfolio footer" class="img-fluid">
+								</a>
+							</div>
+						</div>
+
+						<div class="row no-gutters">
+							<div class="col-md-3">
+								<a href="assets/images/tic-tac.PNG" data-toggle="lightbox">
+									<img src="assets/images/tic-tac.PNG" alt="portfolio footer" class="img-fluid">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="assets/images/joke-app.PNG" data-toggle="lightbox">
+									<img src="assets/images/joke-app.PNG" alt="portfolio footer" class="img-fluid">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="assets/images/layer3.PNG" data-toggle="lightbox">
+									<img src="assets/images/layer3.PNG" alt="portfolio footer" class="img-fluid">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="assets/images/calculator.PNG" data-toggle="lightbox">
+									<img src="assets/images/calculator.PNG" alt="portfolio footer" class="img-fluid">
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Contact -->
+				<div class="collapse pt-0 mt-0" id="contact">
+					<div class="card card-body bg-danger text-light p-4" id='caret-parent'>
+						<div class="d-flex flex-row justify-content-between align-items-center">
+							<h3>My Contact</h3> <i class=" fa fa-caret-up text-white"></i>
+						</div>
+						<p class="lead truncate">Want to hire me? Please feel free to leave a message.</p>
+					</div>
+
+					<div class="card card-body">
+						<div class="p-4">
+							<h3 class='text-danger'>Get In Touch</h3>
+
+							<p class="lead text-muted">I'm waiting for your message. I promise to respond A.S.A.P :)</p>
+
+						</div>
+						<form>
+							<div class="form-group">
+								<div class="input-group input-group-lg">
+									<div class="input-group-prepend">
+										<span class="input-group-text bg-danger">
+											<i class="fa fa-user text-light"></i>
+										</span>
+									</div>
+									<input type="text" class="form-control bg-dark text-white" placeholder="Name">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="input-group input-group-lg">
+									<div class="input-group-prepend">
+										<span class="input-group-text bg-danger">
+											<i class="fa fa-envelope text-light"></i>
+										</span>
+									</div>
+									<input type="email" class="form-control bg-dark text-white" placeholder="Email">
+
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="input-group input-group-lg">
+									<div class="input-group-prepend">
+										<span class="input-group-text bg-danger">
+											<i class="fa fa-pencil text-light"></i>
+										</span>
+									</div>
+									<textarea class="form-control bg-dark text-white" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<input type="submit" value="Submit" class="btn btn-danger text-ligh btn-block btn-lg">
+						</form>
+					</div>
+
+				</div>
+
+
+				<footer class="bg-dark p-5 text-white" id="main-footer">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#" class="btn btn-outline-light">
+								<i class="fa fa-cloud"></i> Download Resume
+							</a>
+						</div>
+					</div>
+				</footer>
+
+
+			</div>
+		</div>
+
+
+		<script src="assets/code/js/app.js"></script>
+		<!-- <script src="assets/library/jquery-3.3.1.min.js"></script>
+		<script src="assets/library/bootstrap-4.min.js"></script>
+		<script src="assets/library/popper.min.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		 crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		 crossorigin="anonymous"></script>
+
+		<!-- ekko lightbox -->
+		<script src="assets/library/-lightbox.min.js"></script>
+		<script src="assets/library/ekko-lightbox.js"></script>
+		<script>
+			(function () {
+				$('.main-header .port-item').on("click", function () {
+					$('.collapse').collapse('hide');
+				});
+				$(document).on("click", "[data-toggle='lightbox']", function (e) {
+					e.preventDefault();
+					$(this).ekkoLightbox();
+				})
+			})();
+		</script>
+	</body>
+
+</html>
